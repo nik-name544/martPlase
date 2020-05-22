@@ -311,6 +311,10 @@
         cursor: pointer;
         background-color: #fff;
 
+        .create__search-categories {
+            display: none;
+        }
+
         .create__search-category {
             padding: 10px;
             border-bottom: 1px solid #dcdcdc;

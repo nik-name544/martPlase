@@ -30,3 +30,19 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.title {
+    font-family: $font;
+    font-size: 30px;
+    line-height: 28px;
+    color: #000;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.rate-star {
+    display: inline-block !important;
+    margin-right: 13px;
+    background-image: url(../img/rate-star.svg);
+}

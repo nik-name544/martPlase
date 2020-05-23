@@ -429,11 +429,11 @@
 
     .slick-arrow {
         position: absolute;
-        top: -78px;
+        top: -75px;
+        padding: 12px 20px;
         right: 0;
         border: none;
         background-color: #7347c1;
-        padding: 15px 25px;
         outline: none;
         cursor: pointer;
     }
@@ -680,3 +680,121 @@
 }
 
 // newest end
+// followers start
+
+.followers {
+    background-color: #eff1f5;
+    max-height: 930px;
+}
+
+.followers__inner {
+    padding-top: 50px;
+    font-family: $font;
+    font-weight: 400;
+    padding-top: 120px;
+
+    .followers__title {
+        margin-bottom: 50px;
+        position: relative;
+    }
+}
+
+.followers-slider__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+
+    .followers-slider__card {
+        box-shadow: none;
+        outline: none;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: -124px;
+        padding: 12px 20px;
+        right: 0;
+        border: none;
+        background-color: #0674ec;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .slick-next {
+        border-top-left-radius: 0;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 0;
+        right: 30px;
+    }
+
+    .slick-prev {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 50px;
+        right: 80px;
+    }
+}
+
+// followers end
+// statistics start
+
+.statistics {
+    background-color: #212225;
+    max-height: 350px;
+
+    &__inner {
+        padding: 95px 0 105px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__paragraph {
+        text-align: center;
+        font-weight: 400;
+
+        &-title {
+            line-height: 36px;
+        }
+
+        &-text {
+            color: #ffffff;
+            line-height: 36px;
+        }
+
+        &-briefcase {
+            color: #feb71d;
+
+            img {
+                padding: 8px 0 35px;
+
+            }
+        }
+
+        &-cloud {
+            color: #58c9e9;
+
+            img {
+                padding: 15px 0 40px;
+            }
+
+        }
+
+        &-smile {
+            color: #77de51;
+
+            img {
+                padding-bottom: 36px;
+            }
+        }
+
+        &-users {
+            color: #ff6a6d;
+
+            img {
+                padding: 13px 0 33px;
+            }
+        }
+    }
+}

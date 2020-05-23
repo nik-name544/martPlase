@@ -13,7 +13,7 @@ $(function () {
 
   $(".rate-star").rateYo({
     rating: 4.5,
-    starWidth: "14px",
+    starWidth: "12px",
     readOnly: true,
     ratedFill: "#ffc000"
   });
@@ -21,6 +21,8 @@ $(function () {
   $('.create__search-click').on('click', function () {
     $('.create__search-categories').slideToggle();
   });
+
+  var mixer = mixitup('.newest__inner-box');
 
 
 });

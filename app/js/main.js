@@ -35,6 +35,10 @@ $(function () {
     cssEase: 'linear'
   });
 
+  $('.newest__click').on('click', function () {
+    $('.newest__filters').slideToggle();
+  });
+
   var mixer = mixitup('.newest__inner-box');
 
 

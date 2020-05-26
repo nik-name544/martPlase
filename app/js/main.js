@@ -39,6 +39,28 @@ $(function () {
     $('.newest__filters').slideToggle();
   });
 
+  $('.price-filter').on('click', function () {
+    $('.price__filters').slideToggle();
+  });
+
+  $('.quantity-filter').on('click', function () {
+    $('.quantity__filters').slideToggle();
+  });
+
+  $(".js-range-slider").ionRangeSlider({
+    type: 'double',
+    min: 0,
+    max: 400,
+    from: 30,
+    to: 300,
+    grid: false,
+    prefix: "$",
+    force_edges: false,     
+    hide_min_max: true,    
+    hide_from_to: false,    
+    block: false
+  });
+
   var mixer = mixitup('.newest__inner-box');
 
 

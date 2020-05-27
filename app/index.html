@@ -26,15 +26,21 @@
                         <div class="header__wrapper">
                             <a class="header__become" href="#">Become a Seller</a>
                             <div class="header__icons">
-                                <button class="header__icons-noti">
-                                    <img class="header__icons-noti-img" src="img/alarm.svg" alt="alarm-icon">
-                                </button>
-                                <button class="header__icons-mail">
-                                    <img class="header__icons-mail-img" src="img/envelope.svg" alt="envelope-icon">
-                                </button>
-                                <button class="header__icons-cart">
-                                    <img class="header__icons-cart-img" src="img/cart.svg" alt="cart-icon">
-                                </button>
+                                <a class="header__icons-noti" href="#">
+                                    <span class="header__icons-noti--span">
+                                        25
+                                    </span>
+                                </a>
+                                <a class="header__icons-mail" href="#">
+                                    <span class="header__icons-mail--span">
+                                        6
+                                    </span>
+                                </a>
+                                <a class="header__icons-cart" href="#">
+                                    <span class="header__icons-cart--span">
+                                        2
+                                    </span>
+                                </a>
                             </div>
                             <a class="header__profile" href="#">
                                 <img class="header__profile-img" src="img/avatar.jpg" alt="avatar">
@@ -61,10 +67,11 @@
                         </ul>
                     </div>
 
-                    <div class="search__inner">
-                        <form class="search__form">
-                            <input class="search__form-input" type="text" placeholder="Search product here..." required>
-                            <button class="search__form-btn" type="submit"></button>
+                    <div class="navigation__search search__inner">
+                        <form class="navigation__search-form search__form">
+                            <input class="navigation__search-input search__form-input" type="search"
+                                placeholder="Search product here..." required>
+                            <button class="navigation__search-btn search__form-btn" type="submit"></button>
                         </form>
                     </div>
 
@@ -94,7 +101,7 @@
                         <div class="create__search-inner">
                             <form class="create__search-form">
 
-                                <input class="create__search-input" type="text" placeholder="Search your products..."
+                                <input class="create__search-input" type="search" placeholder="Search your products..."
                                     required>
                                 <div class="create__search-click"> All Categories
                                     <ul class="create__search-categories">
@@ -114,18 +121,20 @@
             <section class="reason">
                 <div class="container">
                     <div class="reason__inner">
-                        <div class="reason__item">
-                            <img src="img/reason-img.jpg" alt="book">
-                            <div class="reason__title">
-                                Best UX Research
-                            </div>
-                            <div class="reason__text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                                the mattis, leo quam aliquet diam
-                                congue is laoreet elit metus.
+                        <div class="reason__item reason__item-book">
+                            <!-- <img src="img/reason-img.jpg" alt="book"> -->
+                            <div class="reason__wrapper">
+                                <div class="reason__title">
+                                    Best UX Research
+                                </div>
+                                <div class="reason__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet diam
+                                    congue is laoreet elit metus.
+                                </div>
                             </div>
                         </div>
-                        <div class="reason__item">
+                        <div class="reason__item reason__item-table">
                             <img src="img/reason-img1.jpg" alt="table">
                             <div class="reason__title">
                                 Fully Responsive
@@ -136,7 +145,7 @@
                                 congue is laoreet elit metus.
                             </div>
                         </div>
-                        <div class="reason__item">
+                        <div class="reason__item reason__item-phones">
                             <img src="img/reason-img2.jpg" alt="two-phones">
                             <div class="reason__title">
                                 Buy & Sell Easily

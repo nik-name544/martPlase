@@ -141,15 +141,27 @@
 // header end
 // navigation start
 
+.navigation__wrapper {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+}
+
 .navigation {
     height: 80px;
+    background-color: #ffffff;
+    position: relative;
+    right: 30px;
+    margin: 0 auto;
+    padding-top: 25px;
 
     .navigation__inner {
         display: inline-block;
         max-width: 790px;
         width: 100%;
 
-        .navigation__menu {
+        .navigation__menu,
+        a {
             font-weight: 500;
             font-size: 15px;
             line-height: 30px;
@@ -177,7 +189,9 @@
     display: inline-block;
     border: 1px solid #d9dfe5;
     border-radius: 50px;
-    margin: 17px auto;
+    margin: 17px auto 17px 0;
+    position: relative;
+    left: 10px;
 
     .search__form {
         z-index: 1;
@@ -289,14 +303,20 @@
     position: relative;
     z-index: 2;
 
+    &-inner {
+        max-width: 1140px;
+        width: 100%;
+        display: flex;
+    }
+
     &-form {
         display: flex;
-        max-width: 1060px;
         width: 100%;
     }
 
     &-input {
         padding: 19px 20px;
+        max-width: 675px;
         width: 100%;
         height: 100%;
         border: 1px solid #dcdcdc;
@@ -311,12 +331,11 @@
         outline: none;
     }
 
-    .create__search-click {
+    .create__search-categories {
         color: #555555;
         border: 1px solid #dcdcdc;
         padding: 20px 15px;
-        max-width: 195px;
-        width: 100%;
+        width: 195px;
         font-weight: 400;
         font-size: 16px;
         font-family: $font;
@@ -327,26 +346,12 @@
         position: relative;
         cursor: pointer;
         background-color: #fff;
-
-        .create__search-categories {
-            display: none;
-        }
-
-        .create__search-category {
-            padding: 10px;
-            border-bottom: 1px solid #dcdcdc;
-        }
-
-        &::after {
-            content: "";
-            background-image: url(../img/chevron-down.svg);
-            z-index: 1;
-            width: 18px;
-            height: 14px;
-            position: absolute;
-            right: 14px;
-            top: 23px;
-        }
+        appearance: none;
+        outline: none;
+        background-image: url(../img/chevron-down.svg);
+        background-repeat: no-repeat;
+        background-position: 155px 22px;
+        transition: linear 0.5s;
     }
 
     &-btn {
@@ -363,6 +368,7 @@
         font-family: $font;
         margin-left: 30px;
         outline: none;
+        cursor: pointer;
     }
 }
 
@@ -408,20 +414,48 @@
         }
     }
 
+    &__wrapper {
+        padding-top: 200px;
+    }
+
     &__item {
         padding: 0 32px;
         margin: 0px 10px;
         transition: linear 0.5s;
-
-        &__wrapper {
-            padding-top: 200px;
-        }
 
         &-book {
             position: relative;
             &::before {
                 content: "";
                 background-image: url(../img/reason-img.jpg);
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 40px;
+                left: 125px;
+                width: 115px;
+                height: 115px;
+            }
+        }
+
+        &-table {
+            position: relative;
+            &::before {
+                content: "";
+                background-image: url(../img/reason-img1.jpg);
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 40px;
+                left: 125px;
+                width: 115px;
+                height: 120px;
+            }
+        }
+
+        &-phones {
+            position: relative;
+            &::before {
+                content: "";
+                background-image: url(../img/reason-img2.jpg);
                 background-repeat: no-repeat;
                 position: absolute;
                 top: 40px;
@@ -584,14 +618,16 @@
                 border-radius: 50px;
                 color: #ffffff;
                 margin-right: 45px;
+                outline: none;
             }
 
-            .slider__product-span {
+            .slider__product-cart {
                 color: $light__blue;
                 padding-left: 40px;
+                outline: none;
             }
 
-            .slider__product-span::before {
+            .slider__product-cart::before {
                 content: "";
                 background-image: url(../img/cart1.svg);
                 position: absolute;
@@ -599,6 +635,11 @@
                 height: 14px;
                 left: 170px;
                 bottom: 34px;
+            }
+
+            .slider__product-heart {
+                color: #555555;
+                outline: none;
             }
         }
 

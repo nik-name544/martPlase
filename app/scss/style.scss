@@ -23,14 +23,14 @@
     height: 100px;
 
     .header__become {
-        padding: 7px 9px;
+        padding: 7px 18px;
         color: #fff;
-        width: 140px;
         height: 36px;
         background-color: $light__blue;
         border-radius: 50px;
         position: relative;
         bottom: -6px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     }
 
     .header__icons {
@@ -251,12 +251,14 @@
         font-weight: 400;
         font-size: 60px;
         line-height: 70px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     }
 
     &__title {
         font-weight: 700;
         font-size: 60px;
         line-height: 70px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     }
 
     &__text {
@@ -276,6 +278,7 @@
         margin-right: 30px;
         color: #ffffff;
         transition: linear 0.5s;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
 
         &-all:hover {
             background-color: #fff;
@@ -467,9 +470,7 @@
     }
 
     &__item:hover {
-        -webkit-box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.37);
-        -moz-box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.37);
-        box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.37);
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
         border-radius: 2px;
     }
 
@@ -533,11 +534,14 @@
         border-radius: 5px;
         display: flex !important;
         border-radius: 5px;
+        min-height: 450px;
+        height: 100%;
 
         &-img {
             padding-right: 50px;
             max-width: 555px;
             border-radius: 5px;
+            min-height: 450px;
             height: 100%;
         }
 
@@ -591,6 +595,7 @@
         &-tags {
             display: flex;
             justify-content: start;
+            flex-wrap: wrap;
             font-size: 15px;
             line-height: 30px;
             padding-bottom: 45px;
@@ -600,8 +605,8 @@
                 background-color: #f1f3f6;
                 padding: 0px 15px;
                 border-radius: 50px;
-                margin-right: 7px;
                 color: #868c96;
+                margin: 5px 7px 5px 0;
             }
         }
 
@@ -711,7 +716,6 @@
             .newest__filters {
                 display: none;
                 flex-direction: column;
-                right: 194px;
                 padding: 5px 50px 5px 15px;
                 margin-top: 10px;
                 position: absolute;
@@ -747,7 +751,7 @@
     }
 
     &__tag {
-        padding: 0 20px;
+        padding: 0 25px;
         background-color: #f1f3f6;
         border: none;
         font-size: 15px;
@@ -770,6 +774,8 @@
         margin: 60px auto;
         display: flex;
         padding: 11px 35px;
+        max-width: 195px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
 
         &:hover {
             background-color: #f1f3f6;

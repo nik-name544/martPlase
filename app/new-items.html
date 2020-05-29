@@ -22,57 +22,91 @@
                         <a class="header__logo" href="#">
                             <img class="header__logo-img" src="img/MartPlace.png" alt="MartPlace-logo">
                         </a>
-                        <a class="header__become" href="#">Become a Seller</a>
-                        <div class="header__icons">
-                            <button class="header__icons-noti">
-                                <img class="header__icons-noti-img" src="img/alarm.svg" alt="alarm-icon">
-                            </button>
-                            <button class="header__icons-mail">
-                                <img class="header__icons-mail-img" src="img/envelope.svg" alt="envelope-icon">
-                            </button>
-                            <button class="header__icons-cart">
-                                <img class="header__icons-cart-img" src="img/cart.svg" alt="cart-icon">
-                            </button>
-                        </div>
-                        <a class="header__profile" href="#">
-                            <img class="header__profile-img" src="img/avatar.jpg" alt="avatar">
-                            <div class="header__profile-info">
-                                <div class="header__profile-name">Taofiq Hakim
-                                    <span class="header__profile-money">$20.45</span>
-                                </div>
+                        <div class="header__wrapper">
+                            <a class="header__become" href="#">Become a Seller</a>
+                            <div class="header__icons">
+                                <a class="header__icons-noti" href="#">
+                                    <span class="header__icons-noti--span">
+                                        25
+                                    </span>
+                                </a>
+                                <a class="header__icons-mail" href="#">
+                                    <span class="header__icons-mail--span">
+                                        6
+                                    </span>
+                                </a>
+                                <a class="header__icons-cart" href="#">
+                                    <span class="header__icons-cart--span">
+                                        2
+                                    </span>
+                                </a>
                             </div>
-                        </a>
-
+                            <a class="header__profile" href="#">
+                                <img class="header__profile-img" src="img/avatar.jpg" alt="avatar">
+                                <div class="header__profile-info">
+                                    <div class="header__profile-name">Taofiq Hakim
+                                        <span class="header__profile-money">$20.45</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="header__navigation navigation">
+
+                    <div class="header__navigation-wrapper navigation__wrapper">
+                        <nav class="header__navigation-content navigation__content">
+
+                            <div class="header__navigation-inner navigation__inner">
+                                <ul class="header__navigation-menu navigation__menu">
+                                    <li class="header__navigation-points navigation__points">
+                                        <a href="#">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="header__navigation-points navigation__points">
+                                        <a href="#">
+                                            all products
+                                        </a>
+                                    </li>
+                                    <li class="header__navigation-points navigation__points">
+                                        <a href="#">
+                                            wordpress
+                                        </a>
+                                    </li>
+                                    <li class="header__navigation-points navigation__points">
+                                        <a href="#">
+                                            festures
+
+                                        </a>
+                                    </li>
+                                    <li class="header__navigation-points navigation__points">
+                                        <a href="#">
+                                            Pages
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </nav>
+
+                        <div class="header__search-inner search__inner">
+                            <form class="header__search-form search__form">
+                                <input class="header__search-form-input search__form-input" type="search"
+                                    placeholder="Search product here..." required>
+                                <button class="header__search-form-btn search__form-btn" type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
             </header>
-
-            <nav class="navigation">
-                <div class="container">
-                    <div class="navigation__inner">
-                        <ul class="navigation__menu">
-                            <li class="navigation__points">HOME</li>
-                            <li class="navigation__points">all products</li>
-                            <li class="navigation__points">wordpress</li>
-                            <li class="navigation__points">festures</li>
-                            <li class="navigation__points">Pages</li>
-                        </ul>
-                    </div>
-
-                    <div class="search__inner">
-                        <form class="search__form">
-                            <input class="search__form-input" type="text" placeholder="Search product here..." required>
-                            <button class="search__form-btn" type="submit"></button>
-                        </form>
-                    </div>
-
-                </div>
-
-            </nav>
 
             <section class="breadcrumbs" style="background-image: url(img/breadcrumbs-bg.jpg);">
                 <div class="container">
-                    <div class="breadcrumbs-top">
+                    <div class="breadcrumbs__top">
                         <div class="breadcrumbs__title">
                             <span>4,572</span> wordpress themes, made with love
                         </div>
@@ -83,8 +117,8 @@
                             </form>
                         </div>
                     </div>
-                    <div class="breadcrumbs-bottom">
-                        <ul class="breadcrumbs-bottom__list">
+                    <div class="breadcrumbs__bottom">
+                        <ul class="breadcrumbs__bottom-list">
                             <li><a href="#">Home </a></li>
                             <li><a href="#">Category Page Grid</a></li>
                         </ul>
@@ -95,36 +129,36 @@
                 <div class="container">
                     <div class="filters__inner">
                         <div class="filters__left">
-                            <a href="#" class="filters__new filters__new-active">
+                            <a href="#" class="filters__new filters__new--active">
                                 New Products
                             </a>
-                            <a href="#" class="filters__popular">
+                            <a href="#" class="filters__popular filters__popular--active">
                                 Popular Products
                             </a>
                         </div>
 
                         <div class="filters__box">
-                            <div class="price-filter">
+                            <div class="filters__price">
                                 <span>Price</span> : Low to High
-                                <ul class="price__filters">
-                                    <li class="price__filter">first</li>
-                                    <li class="price__filter">second</li>
-                                    <li class="price__filter">third</li>
-                                    <li class="price__filter">fourth</li>
-                                    <li class="price__filter">fifth</li>
+                                <ul class="filters__price-filters">
+                                    <li class="filters__price-filter">first</li>
+                                    <li class="filters__price-filter">second</li>
+                                    <li class="filters__price-filter">third</li>
+                                    <li class="filters__price-filter">fourth</li>
+                                    <li class="filters__price-filter">fifth</li>
                                 </ul>
 
                             </div>
                         </div>
                         <div class="filters__box">
-                            <div class="quantity-filter">
+                            <div class="filters__quantity">
                                 12 Items Per Page
-                                <ul class="quantity__filters">
-                                    <li class="quantity__filter">first</li>
-                                    <li class="quantity__filter">second</li>
-                                    <li class="quantity__filter">third</li>
-                                    <li class="quantity__filter">fourth</li>
-                                    <li class="quantity__filter">fifth</li>
+                                <ul class="filters__quantity-filters">
+                                    <li class="filters__quantity-filter">first</li>
+                                    <li class="filters__quantity-filter">second</li>
+                                    <li class="filters__quantity-filter">third</li>
+                                    <li class="filters__quantity-filter">fourth</li>
+                                    <li class="filters__quantity-filter">fifth</li>
                                 </ul>
                             </div>
                         </div>
@@ -144,14 +178,14 @@
             <section class="items">
                 <div class="container">
                     <div class="items__inner">
-                        <aside class="aside">
-                            <div class="aside__item">
-                                <div class="aside__title">
+                        <aside class="items__aside">
+                            <div class="items__aside-item">
+                                <div class="items__aside-title">
                                     Categories
                                 </div>
-                                <ul class="aside__list">
+                                <ul class="items__aside-list">
 
-                                    <li class="aside__paragraph aside__paragraph-active">
+                                    <li class="items__aside-paragraph items__aside-paragraph--active">
                                         <a href="#">
                                             Wordpress
                                             <span>
@@ -159,7 +193,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph">
+                                    <li class="items__aside-paragraph">
                                         <a href="#">
                                             Landing Page
                                             <span>
@@ -167,7 +201,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph">
+                                    <li class="items__aside-paragraph">
                                         <a href="#">
                                             Psd Template
                                             <span>
@@ -175,7 +209,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph">
+                                    <li class="items__aside-paragraph">
                                         <a href="#">
                                             Plugins
                                             <span>
@@ -183,7 +217,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph">
+                                    <li class="items__aside-paragraph">
                                         <a href="#">
                                             HTML Template
                                             <span>
@@ -191,7 +225,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph">
+                                    <li class="items__aside-paragraph">
                                         <a href="#">
                                             Components
                                             <span>
@@ -199,7 +233,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph">
+                                    <li class="items__aside-paragraph">
                                         <a href="#">
                                             Joomla Template
                                             <span>
@@ -210,44 +244,44 @@
                                 </ul>
                             </div>
 
-                            <div class="aside__item">
-                                <div class="aside__title">
+                            <div class="items__aside-item">
+                                <div class="items__aside-title">
                                     Filter Products
                                 </div>
 
-                                <ul class="aside__list">
+                                <ul class="items__aside-list">
 
-                                    <li class="aside__paragraph aside__paragraph-dots">
+                                    <li class="items__aside-paragraph items__aside-paragraph-dots">
                                         <a href="#">
                                             Trending Products
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph aside__paragraph-dots">
+                                    <li class="items__aside-paragraph items__aside-paragraph-dots">
                                         <a href="#">
                                             Popular Products
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph aside__paragraph-dots">
+                                    <li class="items__aside-paragraph items__aside-paragraph-dots">
                                         <a href="#">
                                             New Products
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph aside__paragraph-dots">
+                                    <li class="items__aside-paragraph items__aside-paragraph-dots">
                                         <a href="#">
                                             Best Seller
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph aside__paragraph-dots">
+                                    <li class="items__aside-paragraph items__aside-paragraph-dots">
                                         <a href="#">
                                             Best Rating
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph aside__paragraph-dots">
+                                    <li class="items__aside-paragraph items__aside-paragraph-dots">
                                         <a href="#">
                                             Low Price
                                         </a>
                                     </li>
-                                    <li class="aside__paragraph aside__paragraph-dots">
+                                    <li class="items__aside-paragraph items__aside-paragraph-dots">
                                         <a href="#">
                                             High Price
                                         </a>
@@ -255,8 +289,8 @@
                                 </ul>
                             </div>
 
-                            <div class="price-range aside__item">
-                                <div class="aside__title">
+                            <div class="items__aside-price-range items__aside-item ">
+                                <div class="items__aside-title">
                                     Pricing Range
                                 </div>
 
@@ -264,513 +298,496 @@
                                     <input class="js-range-slider" type="text" id="example_id" name="example_name"
                                         value="" />
 
-                                    <button class="price-range__btn" type="submit">Search Update</button>
+                                    <button class="items__aside-price-range-btn" type="submit">Search Update</button>
                                 </form>
 
                             </div>
                         </aside>
 
                         <div class="items__cards">
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
 
-                            <div class="page__item card">
-                                <a class="page__item-card-link card__link" href="#">
-                                    <a href="#" class="page__item-more more">
+                            <div class="items__card card">
+                                <a class="items__card-link card__link" href="#">
+                                    <a href="#" class="items__card-more">
                                         More Info
                                     </a>
-                                    <a href="#" class="page__item-live live">
+                                    <a href="#" class="items__card-live">
                                         Live Demo
                                     </a>
-
-                                    <img class="page__item-img img" src="img/ducks-bg.jpg" alt="card-img">
+                                    <img class="items__card-img" src="img/ducks-bg.jpg" alt="card-img">
                                 </a>
 
-
-                                <div class="page__item-content content">
-                                    <div class="page__item-content-title content__title">
+                                <div class="items__card-content">
+                                    <div class="items__card-content-title">
                                         Finance and Consulting
                                         Business Theme
                                     </div>
-                                    <a class="page__item-author author" href="#">
-                                        <img class="page__item-author-img author__img" src="img/avatar.jpg"
+                                    <a class="items__card-author card__author" href="#">
+                                        <img class="items__card-author-img card__author-img" src="img/avatar.jpg"
                                             alt="avatar">
-                                        <div class="page__item-author-name author__name">AazzTech</div>
+                                        <div class="items__card-author-name card__author-name">AazzTech</div>
 
                                     </a>
-                                    <div class="page__item-info-wrapper">
-                                        <div class="page__item-info-stars info__stars">
-                                            <div class="page__item-rate-star rate-star"></div>
+                                    <div class="items__card-info-wrapper">
+                                        <div class="items__card-info-stars card__info-stars">
+                                            <div class="items__card-info-rate-star rate-star"></div>
                                         </div>
-                                        <span class="page__item-info-span info__span">246</span>
+                                        <span class="items__card-info-span">246</span>
                                     </div>
                                 </div>
-                                <div class="page__item-info info">
-                                    <div class="page__item-info-price info__price">$20</div>
-                                    <span class="page__item-author-tech author__tech">
-                                        <img class="page__item-author-tech-img author__tech-img" src="img/wordpres.svg"
-                                            alt="wordpres-icon">
+                                <div class="items__card-info">
+                                    <div class="items__card-info-price">$20</div>
+                                    <span class="items__card-author-tech card__author-tech">
+                                        <img class="items__card-author-tech-img card__author-tech-img"
+                                            src="img/wordpres.svg" alt="wordpres-icon">
                                         WordPress
                                     </span>
                                 </div>
                             </div>
+
+
+
+
 
                         </div>
                     </div>
                     <div class="pagination">
                         <ul class="pagination__list">
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
+                            <li><a class="pagination__arrow-left" href="#"></a></li>
+                            <li><a class="pagination__item pagination__item--active" href="#">1</a></li>
+                            <li><a class="pagination__item" href="#">2</a></li>
+                            <li><a class="pagination__item" href="#">...</a></li>
+                            <li><a class="pagination__item" href="#">8</a></li>
+                            <li><a class="pagination__arrow-right" href="#" ></a></li>
                         </ul>
                     </div>
                 </div>

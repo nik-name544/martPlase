@@ -76,15 +76,14 @@ body {
     margin-top: 30px;
     background-color: #fff;
     max-width: 360px;
+    max-height: 535px;
+    height: 100%;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
     position: relative;
 
-    .more,
-    .live {
+    &__link-more,
+    &__link-live {
         display: none;
         width: 0;
         height: 0;
@@ -93,8 +92,8 @@ body {
     }
 
     &:hover {
-        .more,
-        .live {
+        .card__link-more,
+        .card__link-live {
             display: flex;
             position: absolute;
             top: 95px;
@@ -116,42 +115,42 @@ body {
             }
         }
 
-        .img {
+        .card__img {
             content: url(../img/hover-bg.svg);
             width: 100%;
-            max-height: 230px;
+            max-height: 224.5px;
             height: 100%;
             z-index: 1;
         }
 
-        .more {
+        .card__link-more {
             padding: 13px 30px;
         }
 
-        .live {
+        .card__link-live {
             left: 185px;
             padding: 13px 26px;
         }
     }
 
-    .img {
+    &__img {
         max-width: 360px;
-        max-height: 230px;
+        max-height: 225px;
         width: 100%;
         height: 100%;
         background-size: cover;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
     }
 
-    .content {
+    &__content {
         padding: 23px 30px 15px;
         border-bottom: 1px solid #ececec;
+        max-height: 240px;
+        height: 100%;
     }
 
-    .content__title {
+    &__content-title {
         display: flex;
         width: 100%;
         padding: 0 0 20px;
@@ -159,48 +158,55 @@ body {
         font-size: 20px;
         font-weight: 500;
         color: #000;
+        overflow: auto;
+        max-height: 43px;
     }
 
-    .text {
+    &__text {
         font-size: 16px;
         line-height: 30px;
         color: #555555;
         padding-bottom: 25px;
+        max-height: 115px;
+        height: 100%;
+        overflow: auto;
     }
 
-    .author {
+    &__author {
         display: flex;
         outline: none;
-        .author__img {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            margin-bottom: 25px;
-        }
-
-        .author__name {
-            padding-left: 10px;
-            padding-right: 50px;
-            font-size: 15px;
-            line-height: 30px;
-            color: #000;
-        }
-
-        .author__tech {
-            display: inline-block;
-            font-size: 15px;
-            line-height: 30px;
-            color: #7347c1;
-            position: relative;
-
-            &-img {
-                position: absolute;
-                top: 6px;
-                left: -25px;
-            }
-        }
     }
-    .info {
+
+    &__author-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-bottom: 25px;
+    }
+
+    &__author-name {
+        padding-left: 10px;
+        padding-right: 50px;
+        font-size: 15px;
+        line-height: 30px;
+        color: #000;
+    }
+
+    &__author-tech {
+        display: inline-block;
+        font-size: 15px;
+        line-height: 30px;
+        color: #7347c1;
+        position: relative;
+    }
+
+    &__author-tech-img {
+        position: absolute;
+        top: 6px;
+        left: -25px;
+    }
+
+    &__info {
         padding: 15px 30px 15px 35px;
         display: flex;
         font-size: 15px;
@@ -208,46 +214,55 @@ body {
         position: relative;
         font-weight: 400;
         color: #6f7d8d;
+    }
 
-        .info__price {
-            padding: 0px 18px;
-            background-color: #e6f1fd;
-            border-radius: 50px;
-            color: #ffffff;
-            margin-right: 32px;
-            color: $light__blue;
-            font-weight: 500;
-        }
+    &__info-price {
+        padding: 0px 18px;
+        background-color: #e6f1fd;
+        border-radius: 50px;
+        color: #ffffff;
+        margin-right: 32px;
+        color: $light__blue;
+        font-weight: 500;
+        max-height: 30px;
+    }
 
-        .info__span {
-            color: $light__blue;
-            padding-left: 60px;
-        }
+    &__info-cart {
+        color: $light__blue;
+        padding-left: 60px;
+        position: relative;
 
-        .info__span::before {
+        &::before {
             content: "";
             background-image: url(../img/cart1.svg);
             position: absolute;
             width: 14px;
             height: 14px;
-            right: 70px;
-            bottom: 24px;
+            top: 7px;
+            right: 30px;
         }
     }
 
-    .info__stars {
-        padding-left: 10px;
+    &__info-heart {
+        position: relative;
+        font-weight: 400;
+        color: #6f7d8d;
+        font-size: 15px;
+
+        &::before {
+            content: "";
+            background-image: url(../img/heart.svg);
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 8px;
+            right: 20px;
+            background-repeat: no-repeat;
+        }
     }
 
-    .info::before {
-        content: "";
-        background-image: url(../img/heart.svg);
-        width: 15px;
-        height: 15px;
-        position: absolute;
-        left: 110px;
-        top: 23px;
-        background-repeat: no-repeat;
+    &__info-stars {
+        padding-left: 10px;
     }
 }
 
@@ -303,10 +318,8 @@ body {
             outline: none;
         }
     }
-}
 
-.breadcrumbs-bottom {
-    &__list {
+    &__bottom-list {
         display: inline-block;
         position: relative;
         padding: 35px;
@@ -337,40 +350,3 @@ body {
         }
     }
 }
-
-// .breadcrumbs {
-//     &__inner {
-//         padding: 45px 0 40px;
-//         background-color: #000000;
-//     }
-
-//     &__list {
-//         li {
-
-//             display: inline-block;
-//             position: relative;
-
-//             & + li {
-//                 padding-left: 24px;
-
-//                 &::before {
-//                     content: "-";
-//                     position: absolute;
-//                     left: 8px;
-//                     color: $green;
-//                 }
-//             }
-
-//             &:last-child {
-//                 a,
-//                 span {
-//                     color: $bg;
-//                 }
-//             }
-//         }
-
-//         a {
-//             color: #b0bec5;
-//         }
-//     }
-// }

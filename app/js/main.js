@@ -8,7 +8,8 @@ $(function () {
     infinite: true,
     speed: 500,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    appendArrows: '.products__arrows-wrap'
   });
 
   $(".rate-star").rateYo({
@@ -22,29 +23,30 @@ $(function () {
     $('.create__search-categories').slideToggle();
   });
 
-  $('.followers-slider__inner').slick({
+  $('.followers__slider-inner').slick({
     dots: false,
     arrows: true,
     nextArrow: '<button class="slick-arrow slick-next"><img src="img/chevron-right.svg" alt="next arrow"></button>',
     prevArrow: '<button class="slick-arrow slick-prev"><img src="img/chevron-left.svg" alt="prev arrow"></button>',
     infinite: true,
     speed: 500,
-    // fade: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    appendArrows: '.followers__arrows-wrap'
+    
   });
 
   $('.newest__click').on('click', function () {
     $('.newest__filters').slideToggle();
   });
 
-  $('.price-filter').on('click', function () {
-    $('.price__filters').slideToggle();
+  $('.filters__price').on('click', function () {
+    $('.filters__price-filters').slideToggle();
   });
 
-  $('.quantity-filter').on('click', function () {
-    $('.quantity__filters').slideToggle();
+  $('.filters__quantity').on('click', function () {
+    $('.filters__quantity-filters').slideToggle();
   });
 
   $(".js-range-slider").ionRangeSlider({

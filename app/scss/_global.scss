@@ -27,6 +27,22 @@ li {
 body {
     margin: 0;
     font-family: $font;
+    font-weight: 400;
+}
+
+body::-webkit-scrollbar {
+    opacity: 0;
+    border-radius: 5px;
+    width: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $light__blue;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $purple;
+    }
 }
 
 .wrapper {
@@ -46,13 +62,6 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.container-fluid {
-    max-width: 1950px;
-    width: 100%;
-    margin: 0 auto;
-    // padding: 0 15px;
 }
 
 .title {
@@ -87,7 +96,7 @@ body {
         display: none;
         width: 0;
         height: 0;
-        outline: none;
+        outline: transparent;
         font-weight: 500;
     }
 
@@ -162,6 +171,20 @@ body {
         max-height: 43px;
     }
 
+    &__content-title::-webkit-scrollbar {
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    &__content-title::-webkit-scrollbar-thumb {
+        background-color: $light__blue;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: $purple;
+        }
+    }
+
     &__text {
         font-size: 16px;
         line-height: 30px;
@@ -172,9 +195,24 @@ body {
         overflow: auto;
     }
 
+    &__text::-webkit-scrollbar {
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    &__text::-webkit-scrollbar-thumb {
+        background-color: $light__blue;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: $purple;
+        }
+    }
+
+
     &__author {
         display: flex;
-        outline: none;
+        outline: transparent;
     }
 
     &__author-img {
@@ -190,14 +228,22 @@ body {
         font-size: 15px;
         line-height: 30px;
         color: #000;
+        transition: all .5s;
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     &__author-tech {
         display: inline-block;
         font-size: 15px;
         line-height: 30px;
-        color: #7347c1;
+        color: $purple;
         position: relative;
+        transition: all .5s;
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     &__author-tech-img {
@@ -225,12 +271,22 @@ body {
         color: $light__blue;
         font-weight: 500;
         max-height: 30px;
+        transition: linear 0.5s;
+
+        &:hover {
+            background-color: $light__blue;
+            color: #ffffff;
+        }
     }
 
     &__info-cart {
         color: $light__blue;
         padding-left: 60px;
         position: relative;
+        transition: all .5s;
+        &:hover {
+            opacity: 0.7;
+        }
 
         &::before {
             content: "";
@@ -248,6 +304,10 @@ body {
         font-weight: 400;
         color: #6f7d8d;
         font-size: 15px;
+        transition: all .5s;
+        &:hover {
+            opacity: 0.7;
+        }
 
         &::before {
             content: "";
@@ -297,7 +357,7 @@ body {
             padding-left: 29px;
             padding-right: 125px;
             border-radius: 50px;
-            outline: none;
+            outline: transparent;
 
             &::placeholder {
                 color: #ababab;
@@ -315,7 +375,7 @@ body {
             color: #ffffff;
             border-radius: 50px;
             cursor: pointer;
-            outline: none;
+            outline: transparent;
         }
     }
 
